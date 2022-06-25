@@ -1,0 +1,10 @@
+.nav{
+    background-color: gray;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    margin: 10px;
+}

@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './Components/Nav';
+import Body from './Components/Body';
+import Footer from './Components/Footer';
+import FunComp from './Components/FunComp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* nav
+      body
+      footer */}
+      <Nav/>
+      <Body/>
+      <FunComp val={"vivek"}/>
+      <Footer/>
     </div>
   );
 }
