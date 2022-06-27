@@ -3,6 +3,7 @@ import Nav from './Components/Nav';
 import Body from './Components/Body';
 import Footer from './Components/Footer';
 import FunComp from './Components/FunComp';
+import Fetch from './Components/Fetch';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       footer */}
       <Nav/>
       <Body/>
-      <FunComp val={"vivek"}/>
+      {/* <FunComp val={"vivek"}/> */}
+      <Fetch/>
       <Footer/>
     </div>
   );
