@@ -2,3 +2,27 @@
   margin: 0%;
   padding: 0%;
 }
+
+/* navbar */
+.navbar{
+  height: 30px;
+  padding: 10px;
+  background-color: #ab47bc;
+  color: red;
+}
+.navbar ul{
+  display: flex;
+}
+.navbar ul li{
+  color: white;
+  margin-right: 20px;
+  list-style: none;
+  cursor: pointer;
+
+}
+
+/* footer */
+.footer{
+  background-color: red;
+  height: 20px;
+}

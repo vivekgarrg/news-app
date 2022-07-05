@@ -1,22 +1,27 @@
-import './App.css';
-import Nav from './Components/Nav';
-import Body from './Components/Body';
-import Footer from './Components/Footer';
-import FunComp from './Components/FunComp';
-import Fetch from './Components/Fetch';
+import "./App.css";
+import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+//react-router-dom --> routing...
+//react-router-dom  --v6
 
 function App() {
   return (
-    <div>
-      {/* nav
-      body
-      footer */}
-      <Nav/>
-      <Body/>
-      {/* <FunComp val={"vivek"}/> */}
-      <Fetch/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <div style={{ height: "80vh" }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/*" element={<Home />} />
+        </Routes>
+      </div>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
