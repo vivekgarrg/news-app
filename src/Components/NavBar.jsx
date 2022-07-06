@@ -6,6 +6,7 @@ function NavBar() {
   return (
     <div className='navbar'>
         <ul>
+          <Link style={{textDecoration:"none"}} to='/' ><li style={{fontSize:"20px", padding:"0px 10px 0px 10px"}}>News App</li></Link>
            <Link style={{textDecoration:"none"}} to='/' ><li>Home</li></Link>
            <Link style={{textDecoration:"none"}} to='/about' ><li>About Us</li></Link>
            <Link style={{textDecoration:"none"}} to='/contact' ><li>Contact Us</li></Link>

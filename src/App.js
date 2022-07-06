@@ -12,14 +12,12 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      <div style={{ height: "80vh" }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/*" element={<Home />} />
         </Routes>
-      </div>
       <Footer />
     </BrowserRouter>
   );

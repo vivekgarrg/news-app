@@ -21,6 +21,11 @@
 
 }
 
+.news-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 /* footer */
 .footer{
   background-color: red;
