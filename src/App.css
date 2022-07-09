@@ -26,6 +26,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.progress{
+  width: fit-content;
+  margin: auto;
+  margin-top: 30vh;
+}
 /* footer */
 .footer{
   background-color: red;
